@@ -34,3 +34,41 @@ hamburger2.addEventListener('click', () => {
 });
 
 // HAMBURGER MENU 2 END
+
+// HAMBURGER MENU 3
+
+const hamburger3 = document.querySelector('#hamburger-3');
+const hamburger3Line = document.querySelector('.hamburger-line-3-1');
+let open3 = false;
+
+hamburger3.addEventListener('click', () => {
+  if(!open3) {
+    hamburger3.classList.add('open');
+    open3 = true;
+  } else {
+    hamburger3.classList.remove('open');
+    open3 = false;
+  }
+});
+
+// HAMBURGER MENU 3 END
+
+// HAMBURGER MENU 4
+
+const hamburger4 = document.querySelector('#hamburger-4');
+const hamburger4Line = document.querySelector('.hamburger-line-4');
+let open4 = false;
+
+hamburger4.addEventListener('click', () => {
+  if(!open4) {
+    hamburger4Line.classList.add('open');
+    hamburger4.classList.add('open');
+    open4 = true;
+  } else {
+    hamburger4Line.classList.remove('open');
+    hamburger4.classList.remove('open');
+    open4 = false;
+  }
+});
+
+// HAMBURGER MENU 4 END

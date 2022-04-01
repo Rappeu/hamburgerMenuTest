@@ -1,6 +1,10 @@
+:root {
+  font-size: 62.5%;
+}
+
 body {
   display: flex;
-  gap: 30px;
+  gap: 50px;
   flex-direction: column;
   align-items: center;
   background-color: rgb(56, 56, 56)
@@ -103,3 +107,112 @@ body {
 }
 
 /** HAMBURGER MENU 2 END **/
+
+
+/** HAMBURGER MENU 3 **/
+
+#hamburger-3 {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  transition: transform .5s ease-in-out;
+}
+#hamburger-3:hover {
+  cursor: pointer;
+}   
+.hamburger-line-3-1 {
+  width: 50px;
+  height: 7px;
+  background-color: white;
+  border-radius: 7px;
+  display:block;
+  position:absolute;
+  transform:rotate(90deg);
+}
+.hamburger-line-3-2 {
+  width: 50px;
+  height: 7px;
+  background-color: white;
+  border-radius: 7px;
+  display:block;
+  position:absolute;
+}
+
+#hamburger-3.open {
+  transform:rotate(-45deg);
+}
+
+/** HAMBURGER MENU 3 END **/
+
+
+/** HAMBURGER MENU 4 **/
+
+#hamburger-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  transition: transform .75s ease-in-out;
+}
+
+#hamburger-4:hover {
+  cursor: pointer;
+}
+
+.hamburger-line-4 {
+  width: 5rem;
+  height: 7px;
+  background-color: white;
+  border-radius: 5px;
+  transition: background-color .5s ease-in-out;
+}
+
+.hamburger-line-4::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5rem;
+  height: 7px;
+  background-color: white;
+  border-radius: 5px;
+  transform: translateY(-20px);
+  transition: transform .5s ease-in-out;
+}
+
+.hamburger-line-4::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5rem;
+  height: 7px;
+  background-color: white;
+  border-radius: 5px;
+  transform: translateY(20px);
+  transition: transform .5s ease-in-out;
+}
+
+#hamburger-4.open {
+  transform: rotate(-450deg);
+}
+
+.hamburger-line-4.open {
+  background-color: transparent;
+}
+
+.hamburger-line-4.open::before {
+  transform: rotate(-45deg);
+}
+
+.hamburger-line-4.open::after {
+  transform: rotate(-135deg);
+}
+
+/** HAMBURGER MENU 4 END **/
